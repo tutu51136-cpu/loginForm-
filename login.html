@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>အကောင့်၀င်ရန်</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+
+<body>
+   <div class="main-grid">
+        <div class="colorgrid"></div>
+        
+        <div class="grid-lines">
+            <div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div>
+        </div> 
+
+        <div class="login-main-from">
+            <div class="login-form item-1">
+                <main class="mains">
+                    
+                    <section class="header-title">
+                        <h4 class="h2">အကောင့်၀င်ခြင်း</h4>
+                        <p class="p">
+                            အကောင့်၀င်ရန် ဖုန်းနံပါတ်သို့မဟုတ် အီးလ်မေးဖြင့်အကောင့်၀င်ပါ။
+                        </p>
+                    </section>
+
+                    <section class="from-head">
+                        <p>ဖုန်းနံပါတ်ဖြင့်အကောင့်၀င်ခြင်း</p>
+                    </section>
+
+                    <section class="from">
+                        <form>
+                            <label id="label-1" for="phoneNumber">📞ဖုန်းနံပါတ်</label><br>
+                            <select id="country-code" class="input">
+                                <option id="MyanmarCountry">+95</option>
+                            </select>
+                            <input type="number" placeholder="ဖုန်းနံပါတ်ထည့်ပါ" id="phoneNumber" class="input" name="phoneNumber" min="7" max="10" required>
+                            <br><br><br>
+
+                            <label id="label-2" for="Username">✍️အသုံးပြုသူအမည်</label>
+                            <input type="text" class="input" placeholder="အသုံးပြုသူအမည် ထည့်ပါ" id="Username" min="6" max="16" pattern="[A-Za-z0-9]{6-16}" required>
+                            <br><br><br>
+
+                            <label id="label-3" for="Password">🔑စကားဝှက်</label><br>
+                            <input class="input" type="password" placeholder="စကားဝှက်ထည့်ပါ။" id="Password" min="6" max="16" pattern="[A-Za-z0-9]{6-16}" required>
+                            <br><br><br>
+
+                            <label id="label-3" for="secondPassword">🔑အတည်ပြု စကားဝှက်</label><br>
+                            <input class="input" type="password" placeholder="ဒုတိယအကြိမ် စကားဝှက်ထည့်ပါ။" id="secondPassword" min="6" max="16" pattern="[A-Za-z0-9]{6-16}" required>
+                            
+                            <input type="submit" value="Login" id="submit">
+                        </form>
+                    </section>
+
+                    <div class="sgin">
+                        <a href="">အကောင့်ဖွင့်ရန်</a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
